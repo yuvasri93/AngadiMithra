@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - AngadiMithra</title>
+
+    <style>
+
+        body{
+            font-family:'Segoe UI',sans-serif;
+            background:linear-gradient(to bottom,#BF00FF,#ffffff);
+            margin:0;
+            padding:0;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            width:400px;
+            background:rgba(255,255,255,0.2);
+            backdrop-filter:blur(10px);
+            -webkit-backdrop-filter:blur(10px);
+            padding:30px;
+            border-radius:16px;
+            box-shadow:0px 4px 30px gray;
+            text-align:center;
+        }
+
+        .logo{
+            width:100px;
+            height:auto;
+            margin-bottom:10px;
+        }
+
+        h2{
+            color:#400354;
+            font-size:34px;
+            margin-bottom:10px;
+        }
+
+        p{
+            color:#555;
+            margin-bottom:20px;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            box-sizing:border-box;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            background:#7B1FA2;
+            color:white;
+            border:none;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#BF00FF;
+        }
+
+        .register-link{
+            margin-top:15px;
+        }
+
+        .register-link a{
+            color:#400354;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <img src="{{url_for('static',filename='image/brandlogo.jpeg')}}"
+
+     alt="Logo"
+     class="logo">
+
+    <h2>AngadiMithra</h2>
+
+    <p>Login to continue</p>
+
+    <form method="POST">
+
+        <input type="email"
+               name="email"
+               placeholder="Enter Email"
+               required>
+
+        <input type="password"
+               name="password"
+               placeholder="Enter Password"
+               required>
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <div class="register-link">
+        Don't have an account?
+        <a href="/register">Register Here</a>
+    </div>
+
+</div>
+
+</body>
+</html>
