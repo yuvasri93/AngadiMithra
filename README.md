@@ -21,10 +21,11 @@ The project is being developed using Python Flask as the backend framework and M
 * Flask Application Setup
 * GitHub Repository Setup
 * Navigation between Login and Registration Pages
+* MySQL Database Integration
+
 
 ### In Progress
 
-* MySQL Database Integration
 * User Data Storage
 * Login Authentication
 
@@ -65,7 +66,6 @@ The project is being developed using Python Flask as the backend framework and M
 
 ## Future Enhancements
 
-* MySQL Database Connectivity
 * User Authentication and Authorization
 * Dashboard Module
 * Product Management Module

@@ -1,4 +1,5 @@
 import mysql.connector
+from pathlib import path
 import os
 from dotenv import load_dotenv 
 from pathlib import Path
